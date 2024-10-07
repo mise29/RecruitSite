@@ -364,7 +364,29 @@ main {
     }
 }
 
+.mobile_text {
+    display: none;
+}
+
 @media screen and (max-width:640px) {
+    main {
+        height: 100vh;
+    }
+    .mobile_text {
+        position: absolute;
+        top: -20px;
+        display: block;
+    }
+    .mobile_text img {
+        width: 20rem;
+    }
+
+    .text,
+    .box,
+    .vector {
+        display: none;
+    }
+
     .box1 {
         left: 20px;
         width: 120px;
@@ -452,7 +474,7 @@ main {
     }
 
     main {
-        height: 40vh;
+        /* height: 40vh; */
     }
 
     header {
@@ -1343,14 +1365,17 @@ a {
         letter-spacing: 2px;
         font-size: 26px;
     }
+
     .navigation_menu {
         gap: 50px;
     }
+
     .navigation_menu a {
         font-size: 14px;
         letter-spacing: 1.8px;
         line-height: 1.6;
     }
+
     .heading08 {
         font-size: 22px;
     }
@@ -1436,15 +1461,19 @@ a {
         right: 10px;
         font-size: 1.6rem;
     }
+
     .menu-content h1 {
         padding-left: 10px;
     }
+
     .navigation_menu {
         padding-left: 10px;
     }
+
     .content_recruit {
         grid-template-rows: repeat(2, 180px);
     }
+
     .box_rec:first-child {
         height: 160px;
     }
@@ -1459,9 +1488,11 @@ a {
         letter-spacing: 2px;
         font-size: 1.2em;
     }
+
     .cp_qa {
         padding: 0;
     }
+
     .cp_qa .cp_actab label {
         line-height: 1.5;
         font-size: .8em;
