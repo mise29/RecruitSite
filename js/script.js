@@ -49,3 +49,9 @@ gsap.to('.text', {
     duration: 1.8, 
     ease: 'power1.out' 
 });
+gsap.to('.mobile_text', {
+    y: 0, 
+    opacity: 1,
+    duration: 1.8, 
+    ease: 'power1.out' 
+});
