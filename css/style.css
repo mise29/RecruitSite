@@ -8,6 +8,10 @@ body {
     font-style: normal;
     box-sizing: border-box;
     overflow-x: hidden;
+    background-image: url(../image/desktop_bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top -100px center;
 }
 
 header {
@@ -82,8 +86,8 @@ header {
 
 .close-btn {
     position: absolute;
-    top: 28px;
-    right: 28px;
+    top: 34px;
+    right: 100px;
     font-size: 2rem;
     cursor: pointer;
     display: none;
@@ -149,8 +153,8 @@ main {
     border-radius: 20px;
     font-size: 16px;
     letter-spacing: 1.2px;
-    color: #333;
-    background-color: #fff;
+    color: #fff;
+    background-color: #8A98A4;
     font-weight: 400;
     margin-left: auto;
 }
@@ -241,7 +245,7 @@ main {
     display: grid;
     place-items: center;
     position: absolute;
-    top: 28%;
+    top: 32%;
     left: 6%;
     transform: translate(-50%, -50%);
     z-index: 100;
@@ -249,17 +253,21 @@ main {
     transform: translateY(50px);
 }
 
+.text img {
+    width: 42rem;
+}
+
 .entry {
     width: 140px;
     height: 50px;
     border-radius: 100px;
     font-size: 1.12em;
-    color: #333;
+    color: #fff;
     letter-spacing: 2.4px;
     /* background: linear-gradient(90deg, #ef629f 0%, rgba(255, 191, 48, 1) 50%, #ef629f 100%); */
-    background: #f5f5f5;
+    background: #6B8FA8;
     background-size: 200% 100%;
-    border: 1px solid #333;
+    border: none;
     font-family: "Roboto", sans-serif;
     font-weight: bold;
 }
@@ -504,10 +512,6 @@ main {
         width: 24px;
     }
 
-    main {
-        /* height: 40vh; */
-    }
-
     header {
         padding: 10px;
         grid-template-columns: repeat(2, 1fr) 40px;
@@ -668,7 +672,7 @@ main {
 
 .news_section h2 {
     width: 220px;
-    font-size: 1.6em;
+    font-size: 1em;
     letter-spacing: 2.2px;
     font-weight: normal;
     margin: 0;
@@ -728,8 +732,10 @@ a {
 }
 
 .heading08 {
-    font-size: 26px;
-    font-weight: 800;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
 }
 
 .heading08 span {
@@ -737,6 +743,7 @@ a {
     align-items: center;
     color: #6B8FA8;
     font-size: 30px;
+    padding-right: 10px;
     text-transform: uppercase;
     padding-bottom: 8px;
     font-weight: 800;
@@ -798,7 +805,7 @@ a {
 
     .news_section {
         grid-template-rows: 64px 1fr;
-        padding: 60px 20px;
+        padding: 40px 10px;
     }
 
     .news_list .item a {
@@ -1051,7 +1058,7 @@ a {
 }
 
 .blog_more svg {
-    padding: 40px 0 0 40px;
+    padding: 0 0 0 20px;
 }
 
 .blog_all {
@@ -1106,6 +1113,11 @@ a {
     letter-spacing: 1.5px;
 }
 
+@media screen and (max-width:768px) {
+    .blog_all {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 .content_recruit {
     padding-top: 40px;
     display: grid;
@@ -1151,7 +1163,6 @@ a {
     margin-top: 60px;
     width: 100%;
     height: 80px;
-    background: #fff;
     letter-spacing: 4px;
     border: 1.5px solid #333;
     font-weight: 500;
@@ -1312,7 +1323,7 @@ a {
 
 /* Q */
 .cp_qa .cp_actab label {
-    font-weight: bold;
+    font-weight: 400;
     line-height: 1.6em;
     position: relative;
     display: block;
@@ -1322,7 +1333,7 @@ a {
     text-indent: 1em;
     border-radius: 0.5em;
     /* background: rgba(27, 37, 56, 0.1); */
-    border: 1px solid #333;
+    background-color: #BFEAD9;
     color: #333;
 }
 
@@ -1335,7 +1346,7 @@ a {
 
 .cp_qa .cp_actab label:hover {
     transition: all 0.3s;
-    color: #E299BA;
+    color: #333;
 }
 
 /* + */
@@ -1380,11 +1391,11 @@ a {
 
 .cp_qa .cp_actab input:checked~.cp_actab-content {
     max-height: 40em;
-    border: 10px solid rgba(27, 37, 56, 0.1);
+    border: 1px solid #333;
 }
 
 .cp_qa .cp_actab input:checked~label {
-    color: #E299BA;
+    color: #6B8FA8;
     border-radius: 0.5em 0.5em 0 0;
 }
 
@@ -1422,7 +1433,7 @@ a {
     }
 
     #about_section {
-        padding: 20px;
+        padding: 40px 10px;
     }
 
     #about_section h2 {
@@ -1445,7 +1456,7 @@ a {
     }
 
     #features_section {
-        padding: 40px 20px;
+        padding: 40px 10px;
     }
 
     .content_feature {
@@ -1454,7 +1465,7 @@ a {
     }
 
     #blog_section {
-        padding: 40px 20px;
+        padding: 40px 10px;
     }
 
     .blog_all {
@@ -1464,7 +1475,7 @@ a {
     }
 
     .blog_more svg {
-        padding: 22px 0 0 20px;
+        padding: 0 0 0 20px;
     }
 
     .blog_img {
@@ -1484,11 +1495,14 @@ a {
     }
 
     #recruit_section {
-        padding: 20px 20px;
+        padding: 40px 10px;
     }
 
     .content_recruit {
         padding-top: 10px;
+    }
+    #faq_section {
+        padding: 40px 10px;
     }
 }
 
