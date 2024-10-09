@@ -255,3 +255,149 @@ main {
     color: #333;
     line-height: 1.8;
 }
+
+@media screen and (max-width:768px) {
+    header {
+        padding: 18px;
+    }
+    .big_heading {
+        font-size: 3.8rem;
+    }
+    .small_heading {
+        font-size: 16px;
+    }
+    .about_ray {
+        padding: 20px 0;
+        width: 100%;
+    }
+    .about_ray h2 {
+        font-size: 1rem;
+    }
+    .message {
+        padding: 60px 0;
+    }
+    .message h2 {
+        font-size: 3rem;
+        margin: 0;
+    }
+    .member {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .member_01 {
+        gap: 0;
+    }
+    .name_text {
+        width: 100%;
+    }
+    .name_text h4 {
+        font-size: 1.4rem;
+    }
+    .name_text h4 span {
+        font-size: 14px;
+    }
+    .mission h2 {
+        font-size: 3rem;
+    }
+    .mission p {
+        font-size: 1.4rem;
+    }
+    .entry {
+        width: 120px;
+        height: 44px;
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width:500px) {
+    header {
+        grid-template-columns: repeat(2,1fr) 40px;
+    }
+    .line div {
+        width: 24px;
+    }
+    .entry {
+        width: 100px;
+        height: 38px;
+        font-size: 1em;
+        letter-spacing: 1.8px;
+    }
+    .big_heading {
+        font-size: 2.8rem;
+    }
+    .small_heading {
+        margin: 5px 0;
+        font-size: 12px;
+    }
+    .about_ray h2 {
+        font-size: 14px;
+    }
+    .message {
+        padding: 40px 0;
+    }
+    .message h2 {
+        font-size: 2.4rem;
+    }
+    .name_text h4 {
+        font-size: 1.2rem;
+    }
+    .name_text h4 span {
+        font-size: 12px;
+    }
+    .name_text p {
+        font-size: 14px;
+    }
+    .mission h2 {
+        font-size: 2.4rem;
+    }
+    .mission p {
+        font-size: 1.12rem;
+    }
+}
+
+@media screen and (max-width:430px) {
+    header {
+        grid-template-columns: repeat(2, 1fr) 30px;
+    }
+
+    .line div {
+        width: 18px;
+        margin-top: 4px;
+    }
+    .entry {
+        width: 82px;
+        height: 32px;
+        font-size: .88em;
+        letter-spacing: 1.4px;
+    }
+    .big_heading {
+        font-size: 2.2rem;
+    }
+    .about_ray h2 {
+        font-size: 12px;
+    }
+    .message {
+        padding: 28px 0;
+    }
+    .member_01 {
+        padding-top: 32px;
+    }
+    .message h2 {
+        font-size: 2rem;
+    }
+    .name_text h4 {
+        font-size: 1rem;
+    }
+    .name_text p {
+        font-size: 12px;
+    }
+    .mission h2 {
+        font-size: 2rem;
+    }
+    .mission p {
+        font-size: 1rem;
+    }
+    .mission h2 {
+        padding-top: 32px;
+    }
+}
