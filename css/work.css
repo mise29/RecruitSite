@@ -7,7 +7,6 @@ body {
     font-optical-sizing: auto;
     font-style: normal;
     box-sizing: border-box;
-    overflow-x: hidden;
 }
 
 header {
@@ -173,178 +172,180 @@ main {
     font-weight: 800;
 }
 
-.about_ray {
-    padding: 20px 0;
-    width: 80%;
-}
-
-.about_ray h2 {
-    font-weight: 500;
-    font-size: 1.2rem;
-    line-height: 1.8;
-    letter-spacing: 1.2px;
-}
-
-
-.member_01 {
-    padding-top: 40px;
-    display: flex;
-    gap: 10px;
-}
-
-.staff_img {
-    /* background-image: url(../image/staff01.jpg); */
-    /* width: 20%; */
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.staff_img02 {
-    /* background-image: url(../image/staff02.jpg); */
-    /* width: 20%; */
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.name_text {
-    width: 90%;
-    letter-spacing: 1.2px;
-}
-
-.name_text h4 {
-    font-size: 1.8em;
-    margin: 0;
-}
-
-.name_text p {
-    font-size: 1em;
-    letter-spacing: 1.2px;
-    line-height: 1.8;
-}
-
-.name_text h4 span {
-    padding-left: 10px;
-    font-size: 16px;
-}
-
-.member {
+#working,
+#working02,
+#working03 {
+    padding-top: 60px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 400px 1fr;
+    gap: 60px;
 }
 
-.mission h2 {
-    padding-top: 40px;
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.border {
+    border: 1px solid #333;
+    transform: rotate(-90deg);
+    width: 1px;
+    height: 100px;
+    background-color: #333;
+    margin: 0 100px 0 0;
+}
+
+#working h2,
+#working02 h2,
+#working03 h2 {
     font-weight: 800;
-    font-size: 4rem;
+    font-size: 3.8rem;
     letter-spacing: 1.2px;
     color: #6b8fa8;
     margin: 0;
 }
 
-.mission p {
-    font-weight: 600;
-    font-size: 1.8rem;
+.work01 h3 {
+    font-size: 1.2rem;
+    padding-top: 20px;
+    margin: 0;
     letter-spacing: 1.2px;
-    color: #333;
-    line-height: 1.8;
 }
 
-@media screen and (max-width:768px) {
+.work01:nth-of-type(1) {
+    padding-top: 0;
+}
+
+.work01 p {
+    font-size: 1rem;
+    letter-spacing: 1.2px;
+    line-height: 1.6;
+}
+
+.support,
+.welfare {
+    margin-top: 60px;
+}
+
+@media screen and (max-width:1100px) {
+
+    #working h2,
+    #working02 h2,
+    #working03 h2 {
+        font-size: 3.4rem;
+    }
+
+    #working,
+    #working02,
+    #working03 {
+        grid-template-columns: 360px 1fr;
+    }
+}
+
+@media screen and (max-width:930px) {
+
+    #working h2,
+    #working02 h2,
+    #working03 h2 {
+        font-size: 3.2rem;
+    }
+
+    #working,
+    #working02,
+    #working03 {
+        grid-template-columns: 300px 1fr;
+    }
+
+    .border {
+        height: 60px;
+        margin: 0 60px 0 0;
+    }
+}
+
+@media screen and (max-width:800px) {
     header {
         padding: 18px;
     }
+
     .big_heading {
         font-size: 3.8rem;
     }
+
     .small_heading {
         font-size: 16px;
     }
-    .about_ray {
-        padding: 20px 0;
-        width: 100%;
-    }
-    .about_ray h2 {
-        font-size: 1rem;
-    }
-    .message {
-        padding: 60px 0;
-    }
-    .message h2 {
+
+    #working h2,
+    #working02 h2,
+    #working03 h2 {
         font-size: 3rem;
-        margin: 0;
     }
-    .member {
-        display: grid;
+
+    #working,
+    #working02,
+    #working03 {
         grid-template-columns: 1fr;
+        gap: 40px;
     }
-    .member_01 {
-        gap: 0;
-    }
-    .name_text {
-        width: 100%;
-    }
-    .name_text h4 {
-        font-size: 1.4rem;
-    }
-    .name_text h4 span {
-        font-size: 14px;
-    }
-    .mission h2 {
-        font-size: 3rem;
-    }
-    .mission p {
-        font-size: 1.4rem;
-    }
-    .entry {
-        width: 120px;
-        height: 44px;
-        font-size: 1em;
+
+    .border {
+        height: 60px;
+        margin: 0 60px 0 0;
     }
 }
 
 @media screen and (max-width:500px) {
-    header {
-        grid-template-columns: repeat(2,1fr) 40px;
+    main {
+        padding: 20px 10px;
     }
+
+    header {
+        grid-template-columns: repeat(2, 1fr) 40px;
+    }
+
     .line div {
         width: 24px;
     }
+
     .entry {
         width: 100px;
         height: 38px;
         font-size: 1em;
         letter-spacing: 1.8px;
     }
+
     .big_heading {
         font-size: 2.8rem;
     }
+
     .small_heading {
         margin: 5px 0;
         font-size: 12px;
     }
-    .about_ray h2 {
-        font-size: 14px;
+
+    #working h2,
+    #working02 h2,
+    #working03 h2 {
+        font-size: 2.2rem;
     }
-    .message {
-        padding: 40px 0;
+
+    #working,
+    #working02,
+    #working03 {
+        gap: 20px;
     }
-    .message h2 {
-        font-size: 2.4rem;
-    }
-    .name_text h4 {
-        font-size: 1.2rem;
-    }
-    .name_text h4 span {
-        font-size: 12px;
-    }
-    .name_text p {
-        font-size: 14px;
-    }
-    .mission h2 {
-        font-size: 2.4rem;
-    }
-    .mission p {
+
+    .work01 h3 {
         font-size: 1.12rem;
+    }
+
+    .work01 p {
+        font-size: 14px;
+    }
+
+    .support,
+    .welfare {
+        margin-top: 40px;
     }
 }
 
@@ -352,6 +353,7 @@ main {
     main {
         padding: 20px 10px;
     }
+
     header {
         grid-template-columns: repeat(2, 1fr) 30px;
     }
@@ -360,40 +362,40 @@ main {
         width: 18px;
         margin-top: 4px;
     }
+
     .entry {
         width: 82px;
         height: 32px;
         font-size: .88em;
         letter-spacing: 1px;
     }
+
     .big_heading {
         font-size: 2.2rem;
     }
-    .about_ray h2 {
-        font-size: 12px;
-    }
-    .message {
-        padding: 28px 0;
-    }
-    .member_01 {
-        padding-top: 32px;
-    }
-    .message h2 {
+
+    #working h2,
+    #working02 h2,
+    #working03 h2 {
         font-size: 2rem;
     }
-    .name_text h4 {
+
+    #working,
+    #working02,
+    #working03 {
+        gap: 20px;
+    }
+
+    .border {
+        height: 28px;
+        margin: 0 28px 0 0;
+    }
+
+    .work01 h3 {
         font-size: 1rem;
     }
-    .name_text p {
+
+    .work01 p {
         font-size: 12px;
-    }
-    .mission h2 {
-        font-size: 2rem;
-    }
-    .mission p {
-        font-size: 1rem;
-    }
-    .mission h2 {
-        padding-top: 32px;
     }
 }
