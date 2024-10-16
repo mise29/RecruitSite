@@ -18,7 +18,7 @@ header {
     align-items: center;
     padding: 28px;
     transform: translateY(-100px);
-    animation: slideInFromTop 1s ease-out 1.4s forwards;
+    animation: slideInFromTop 1s ease-out 1s forwards;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -136,7 +136,7 @@ header {
 a {
     list-style: none;
     text-decoration: none;
-    padding-top: 10px;
+    margin-left: auto;
 }
 
 .entry {
@@ -185,6 +185,16 @@ main {
     letter-spacing: 1.2px;
 }
 
+.message {
+    padding: 60px 0;
+}
+
+.message h2 {
+    font-weight: 800;
+    font-size: 4rem;
+    letter-spacing: 1.2px;
+    color: #6b8fa8;
+}
 
 .member_01 {
     padding-top: 40px;

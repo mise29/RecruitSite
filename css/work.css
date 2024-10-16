@@ -7,6 +7,7 @@ body {
     font-optical-sizing: auto;
     font-style: normal;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 header {
@@ -17,7 +18,7 @@ header {
     align-items: center;
     padding: 28px;
     transform: translateY(-100px);
-    animation: slideInFromTop 1s ease-out 1.4s forwards;
+    animation: slideInFromTop 1s ease-out 1s forwards;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -135,7 +136,7 @@ header {
 a {
     list-style: none;
     text-decoration: none;
-    padding-top: 10px;
+    margin-left: auto;
 }
 
 .entry {
