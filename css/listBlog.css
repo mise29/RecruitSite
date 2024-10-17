@@ -66,7 +66,7 @@ header {
 }
 
 .menu.open {
-    top: -10px;
+    top: 10px;
 }
 
 .menu {
@@ -179,7 +179,7 @@ main {
 .blogAll {
     padding-top: 60px;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     gap: 28px;
 }
 .visual {
@@ -217,4 +217,180 @@ main {
     background-image: url(../image/summer_ticket.jpg);
     background-size: cover;
     background-position: center -50px;
+}
+
+@media screen and (max-width:768px) {
+    header {
+        padding: 18px;
+    }
+    .big_heading {
+        font-size: 3.8rem;
+    }
+
+    .small_heading {
+        font-size: 16px;
+    }
+    .content_recruit {
+        padding-top: 40px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 200px);
+        gap: 20px;
+    }
+
+    .box_rec:first-child {
+        height: 200px;
+        border-radius: 10px;
+    }
+
+    .box_rec:last-child {
+        height: 200px;
+        border-radius: 10px;
+
+    }
+
+    .box_rec p {
+        padding: 20px 0 0 40px;
+        font-size: 1.4em;
+        line-height: 2;
+    }
+
+    .box_rec>svg {
+        position: relative;
+        top: -10%;
+        left: 88%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    header {
+        grid-template-columns: repeat(2, 1fr) 40px;
+    }
+
+    .line div {
+        width: 24px;
+    }
+
+    .entry {
+        width: 100px;
+        height: 38px;
+        font-size: 1em;
+        letter-spacing: 1.8px;
+    }
+    .big_heading {
+        font-size: 2.8rem;
+    }
+
+    .small_heading {
+        margin: 5px 0;
+        font-size: 12px;
+    }
+    .box_rec p {
+        padding: 18px 0 0 28px;
+        font-size: 1.2em;
+        font-weight: 500;
+    }
+
+    .box_rec>svg {
+        position: relative;
+        left: 84%;
+    }
+
+    .big_btn {
+        margin-top: 40px;
+        width: 100%;
+        height: 68px;
+        font-size: 2em;
+        border-radius: 100px;
+    }
+}
+
+@media screen and (max-width:414px) {
+    header {
+        grid-template-columns: repeat(2, 1fr) 30px;
+    }
+
+    .line div {
+        width: 18px;
+        margin-top: 4px;
+    }
+
+    .entry {
+        width: 86px;
+        height: 36px;
+        font-size: .88em;
+        letter-spacing: 1px;
+    }
+
+    .big_heading {
+        font-size: 2.2rem;
+    }
+
+    .content_recruit {
+        padding-top: 28px;
+        gap: 0;
+    }
+
+    .box_rec:first-child {
+        height: 180px;
+    }
+
+    .box_rec:last-child {
+        height: 180px;
+    }
+
+    .box_rec p {
+        padding: 10px 0 0 28px;
+        font-size: 1em;
+        font-weight: 500;
+    }
+
+    .box_rec>svg {
+        position: relative;
+        left: 80%;
+    }
+
+    .big_btn {
+        margin-top: 20px;
+        width: 100%;
+        height: 60px;
+        letter-spacing: 2.8px;
+        border: 1.2px solid #333;
+        font-weight: 500;
+        font-size: 1.6em;
+        border-radius: 100px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .menu-content h1 {
+        letter-spacing: 2px;
+        font-size: 26px;
+    }
+
+    .navigation_menu {
+        gap: 50px;
+    }
+
+    .navigation_menu a {
+        font-size: 14px;
+        letter-spacing: 1.8px;
+        line-height: 1.6;
+    }
+}
+
+@media screen and (max-width:414px) {
+.close-btn {
+    top: 20px;
+    right: 25px;
+    font-size: 1.6rem;
+}
+
+.menu-content h1 {
+    padding-left: 20px;
+}
+
+.navigation_menu {
+    padding-left: 20px;
+}
 }

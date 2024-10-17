@@ -342,6 +342,9 @@ header .form {
 }
 
 @media screen and (max-width:768px) {
+    header {
+        padding: 18px;
+    }
     .content_recruit {
         padding-top: 40px;
         display: grid;
@@ -375,6 +378,20 @@ header .form {
 }
 
 @media screen and (max-width:500px) {
+    header {
+        grid-template-columns: repeat(2, 1fr) 40px;
+    }
+
+    .line div {
+        width: 24px;
+    }
+
+    .entry {
+        width: 100px;
+        height: 38px;
+        font-size: 1em;
+        letter-spacing: 1.8px;
+    }
     .box_rec p {
         padding: 18px 0 0 28px;
         font-size: 1.2em;
@@ -396,6 +413,22 @@ header .form {
 }
 
 @media screen and (max-width:414px) {
+    header {
+        grid-template-columns: repeat(2, 1fr) 30px;
+    }
+
+    .line div {
+        width: 18px;
+        margin-top: 4px;
+    }
+
+    .entry {
+        width: 86px;
+        height: 36px;
+        font-size: .88em;
+        letter-spacing: 1px;
+    }
+
     .content_recruit {
         padding-top: 28px;
         gap: 0;
@@ -430,4 +463,37 @@ header .form {
         font-size: 1.6em;
         border-radius: 100px;
     }
+}
+
+@media screen and (max-width:550px) {
+    .menu-content h1 {
+        letter-spacing: 2px;
+        font-size: 26px;
+    }
+
+    .navigation_menu {
+        gap: 50px;
+    }
+
+    .navigation_menu a {
+        font-size: 14px;
+        letter-spacing: 1.8px;
+        line-height: 1.6;
+    }
+}
+
+@media screen and (max-width:414px) {
+.close-btn {
+    top: 20px;
+    right: 25px;
+    font-size: 1.6rem;
+}
+
+.menu-content h1 {
+    padding-left: 20px;
+}
+
+.navigation_menu {
+    padding-left: 20px;
+}
 }
