@@ -156,7 +156,7 @@ a {
 
 #jobDes {
     margin: 40px auto 42px auto;
-    width: 58%;
+    width: 80%;
 }
 
 .job h2 {
@@ -226,7 +226,11 @@ p {
 
 @media screen and (max-width:768px) {
     #jobDes {
-        width: 80%;
+        width: 90%;
+    }
+
+    .job-01 {
+        margin-top: 40px;
     }
 
     .job-01,
@@ -265,13 +269,18 @@ p {
     font-weight: normal;
 }
 
-.directEntry,.agentEntry {
+.directEntry,
+.agentEntry {
     letter-spacing: 1px;
 }
-.pattern01,.pattern02 {
+
+.pattern01,
+.pattern02 {
     margin-top: 18px;
 }
-.pattern01P,.pattern02P {
+
+.pattern01P,
+.pattern02P {
     margin-top: 4px;
     line-height: 1.6;
 }
@@ -291,17 +300,42 @@ h3 {
 }
 
 @media screen and (max-width:768px) {
+    header {
+        padding: 18px;
+    }
+
     .title {
         font-size: 1.2rem;
     }
+
     .detailText {
         width: 100%;
     }
+
     h3 {
         font-size: 1.2rem;
     }
-    h4,p {
+
+    h4,
+    p {
         font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:500px) {
+    header {
+        grid-template-columns: repeat(2, 1fr) 40px;
+    }
+
+    .line div {
+        width: 24px;
+    }
+
+    .entry {
+        width: 100px;
+        height: 38px;
+        font-size: 1em;
+        letter-spacing: 1.8px;
     }
 }
 
@@ -320,20 +354,53 @@ h3 {
         letter-spacing: 1.8px;
         line-height: 1.6;
     }
+    .job p {
+        padding-top: 10px;
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width:414px) {
-.close-btn {
-    top: 20px;
-    right: 25px;
-    font-size: 1.6rem;
-}
+    header {
+        grid-template-columns: repeat(2, 1fr) 30px;
+    }
 
-.menu-content h1 {
-    padding-left: 20px;
-}
+    .line div {
+        width: 18px;
+        margin-top: 4px;
+    }
 
-.navigation_menu {
-    padding-left: 20px;
-}
+    .entry {
+        width: 86px;
+        height: 36px;
+        font-size: .88em;
+        letter-spacing: 1px;
+    }
+
+    .close-btn {
+        top: 20px;
+        right: 25px;
+        font-size: 1.6rem;
+    }
+
+    .menu-content h1 {
+        padding-left: 20px;
+    }
+
+    .navigation_menu {
+        padding-left: 20px;
+    }
+
+    .job h2 {
+        font-size: 1.8rem;
+    }
+
+    .job-01 {
+        margin-top: 28px;
+    }
+
+    .job p {
+        padding-top: 10px;
+        font-size: 14px;
+    }
 }
