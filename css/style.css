@@ -175,6 +175,10 @@ main {
     bottom: 20px;
 }
 
+.firsttext button {
+    display: none;
+}
+
 .firsttext_border {
     width: 100%;
     /* border-bottom: 1px solid #ccc; */
@@ -334,14 +338,32 @@ main {
 
     .firsttext h1 {
         font-size: 40px;
-        bottom: 240px;
+        bottom: 200px;
     }
 
     .firsttext p {
         font-size: 14px;
         width: 65%;
         padding-left: 2px;
-        bottom: 170px;
+        bottom: 120px;
+    }
+    .firsttext button {
+        display: block;
+        position: absolute;
+        bottom: 60px;
+        padding: 10px;
+        background-color: #6B8FA8;
+        color: #fff;
+        border: none;
+        font-size: 14px;
+        letter-spacing: 1.2px;
+        border-radius: 4px;
+    }
+
+    .firsttext_border {
+        position: absolute;
+        bottom: 0;
+        border-bottom: 1px solid #ccc;
     }
 
     .line div {
