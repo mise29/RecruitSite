@@ -1,11 +1,10 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 body {
     background: #fefefe;
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
-    font-style: normal;
     box-sizing: border-box;
     overflow-x: hidden;
 }
@@ -14,7 +13,7 @@ header {
     position: relative;
     z-index: 200;
     display: grid;
-    grid-template-columns: repeat(2, 1fr) 60px;
+    grid-template-columns: repeat(2, 1fr) 40px;
     align-items: center;
     padding: 28px;
     transform: translateY(-100px);
@@ -42,7 +41,7 @@ header {
 
 .line div {
     margin-top: 6px;
-    width: 30px;
+    width: 22px;
     height: 2px;
     background: #333;
     margin-left: auto;
@@ -111,7 +110,8 @@ header {
 .menu-content h1 {
     padding-left: 40px;
     letter-spacing: 2px;
-    font-size: 28px;
+    font-size: 32px;
+    color: #6B8FA8;
 }
 
 .menu-content {
@@ -124,8 +124,9 @@ header {
 }
 
 .navigation_menu a {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
     font-size: 18px;
     color: #333;
     letter-spacing: 1.8px;
@@ -142,16 +143,16 @@ a {
 .entry {
     width: 140px;
     height: 50px;
-    border-radius: 100px;
-    font-size: 1.12em;
-    color: #333;
-    letter-spacing: 2.4px;
-    background: #fff;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1.5px;
+    background: #6B8FA8;
     background-size: 200% 100%;
     border: none;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
     font-weight: 600;
-    margin-left: auto;
-    border: 1px solid #333;
 }
 
 
@@ -161,7 +162,7 @@ main {
 
 .big_heading {
     font-weight: 800;
-    font-size: 4.8rem;
+    font-size: 4rem;
     letter-spacing: 2.8px;
     margin: 0;
     color: #6b8fa8;
@@ -180,9 +181,9 @@ main {
 }
 
 .about_ray h2 {
-    font-weight: 500;
-    font-size: 1.4rem;
-    line-height: 1.6;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 2;
     letter-spacing: 1.2px;
 }
 
@@ -262,8 +263,8 @@ main {
 }
 
 .mission p {
-    font-weight: 600;
-    font-size: 1.8rem;
+    font-weight: normal;
+    font-size: 1.4rem;
     letter-spacing: 1.2px;
     color: #333;
     line-height: 1.8;
@@ -273,11 +274,12 @@ main {
 .owner_message h4 {
     font-size: 2em;
     padding: 0 20px;
+    margin-top: 0;
 }
 
 .owner_message p {
     padding: 0 20px;
-    font-size: 1.6em;
+    font-size: 18px;
     letter-spacing: 1.2px;
     line-height: 1.8;
 }
@@ -285,7 +287,7 @@ main {
 .grid {
     display: grid;
     grid-template-columns: 1fr 400px;
-    align-items: start;
+    align-items: center;
 }
 
 .owner_image img {
@@ -304,7 +306,7 @@ main {
     }
 
     .owner_message p {
-        font-size: 1.4rem;
+        font-size: 18px;
     }
 }
 
@@ -321,7 +323,7 @@ main {
     }
 
     .owner_message p {
-        font-size: 1.24rem;
+        font-size: 18px;
         padding-top: 10px;
     }
 }
@@ -329,13 +331,14 @@ main {
 @media screen and (max-width:768px) {
     .grid {
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 20px;
     }
     .owner_image img {
         width: 100%;
-        height: 280px;
+        height: auto;
         border-radius: 0px;
         object-fit: cover;
+        object-position: top;
     }
 }
 
@@ -495,7 +498,7 @@ main {
     }
 
     .big_heading {
-        font-size: 2.2rem;
+        font-size: 25px;
     }
 
     .about_ray h2 {
@@ -511,7 +514,7 @@ main {
     }
 
     .message h2 {
-        font-size: 2rem;
+        font-size: 25px;
     }
 
     .name_text h4 {
@@ -523,11 +526,11 @@ main {
     }
 
     .mission h2 {
-        font-size: 2rem;
+        font-size: 25px;
     }
 
     .mission p {
-        font-size: 1rem;
+        font-size: 16px;
     }
 
     .mission h2 {
