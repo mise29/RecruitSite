@@ -109,7 +109,7 @@ header {
 
 .menu-content h1 {
     padding-left: 40px;
-    letter-spacing: 2px;
+    letter-spacing: 1.6px;
     font-size: 32px;
     color: #6B8FA8;
 }
@@ -129,7 +129,7 @@ header {
     font-weight: 400;
     font-size: 18px;
     color: #212121;
-    letter-spacing: 1.8px;
+    letter-spacing: 1.6px;
     line-height: 1.8;
 }
 
@@ -155,7 +155,7 @@ main {
 .firsttext {
     margin-right: auto;
     padding: 0 20px;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.6px;
     color: #212121;
 }
 
@@ -192,7 +192,7 @@ main {
     border-radius: 4px;
     font-size: 16px;
     color: #fff;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.6px;
     background: #6B8FA8;
     background-size: 200% 100%;
     border: none;
@@ -356,7 +356,7 @@ main {
         color: #fff;
         border: none;
         font-size: 14px;
-        letter-spacing: 1.2px;
+        letter-spacing: 1.6px;
         border-radius: 4px;
     }
 
@@ -388,48 +388,11 @@ main {
         font-weight: 550;
     }
 
-    .box1 {
-        top: 280px;
-        left: 20px;
-        width: 100px;
-        height: 100px;
-    }
-
-    .box2 {
-        top: 400px;
-        right: 80px;
-        width: 80px;
-        height: 80px;
-    }
-
-    .box3 {
-        top: 32rem;
-        right: 20px;
-        width: 80px;
-        height: 80px;
-    }
-
-    .box4 {
-        left: 100px;
-        top: 32rem;
-        width: 100px;
-        height: 100px;
-    }
-
-    .vector {
-        top: 32rem;
-        right: 130px;
-    }
-
-    .vector img {
-        width: 80px;
-    }
-
     .entry {
         width: 100px;
         height: 38px;
         font-size: 1em;
-        letter-spacing: 1.8px;
+        letter-spacing: 1.6px;
     }
 
     .text {
@@ -438,36 +401,6 @@ main {
 
     .text img {
         width: 20rem;
-    }
-}
-
-@media screen and (max-width:430px) {
-    .vector {
-        right: 110px;
-    }
-}
-
-@media screen and (max-width:400px) {
-    .box3 {
-        top: 32rem;
-        right: 20px;
-        width: 70px;
-        height: 70px;
-    }
-
-    .box4 {
-        left: 100px;
-        top: 32rem;
-        width: 80px;
-        height: 80px;
-    }
-
-    .vector {
-        top: 32rem;
-    }
-
-    .vector img {
-        width: 80px;
     }
 }
 
@@ -531,7 +464,7 @@ main {
 .news_section h2 {
     width: 220px;
     font-size: 1em;
-    letter-spacing: 2.2px;
+    letter-spacing: 1.6px;
     font-weight: normal;
     margin: 0;
     display: inline-block;
@@ -681,7 +614,7 @@ a {
 }
 
 #about_section {
-    letter-spacing: 2.2px;
+    letter-spacing: 1.6px;
     font-weight: normal;
     margin: 0;
     display: inline-block;
@@ -702,7 +635,7 @@ a {
 .about_left h3 {
     padding-top: 40px;
     font-size: 1.8em;
-    letter-spacing: 2.8px;
+    letter-spacing: 1.6px;
     font-weight: 500;
     margin: 0;
 }
@@ -711,8 +644,9 @@ a {
     margin: 0;
     padding: 40px 0;
     line-height: 1.8;
-    letter-spacing: 2px;
+    letter-spacing: 1.6px;
     font-size: 1em;
+    font-weight: 500;
 }
 
 .btn_about {
@@ -725,7 +659,7 @@ a {
     border: 1.2px solid #333;
     font-size: 1em;
     color: #333;
-    letter-spacing: 2.4px;
+    letter-spacing: 1.6px;
     /* background: linear-gradient(90deg, #ef629f 0%, rgba(255, 191, 48, 1) 50%, #ef629f 100%); */
     background-size: 200% 100%;
     border: 1px solid #333;
@@ -817,7 +751,7 @@ a {
         padding: 20px 0;
         font-size: 12px;
         line-height: 1.6;
-        letter-spacing: 2px;
+        letter-spacing: 1.6px;
     }
 
     .btn_about {
@@ -828,23 +762,11 @@ a {
     }
 }
 
-/* #features_section h2,
-#blog_section h2,
-#recruit_section h2,
-#faq_section h2 {
-    font-size: 1.6em;
-    letter-spacing: 2.8px;
-    font-weight: 500;
-    margin: 0;
-    display: inline-block;
-    color: #333;
-} */
-
 #features_section h2,
 #blog_section h2,
 #recruit_section h2,
 #faq_section h2 {
-    letter-spacing: 2.2px;
+    letter-spacing: 1.6px;
 }
 
 #features_section,
@@ -875,13 +797,15 @@ a {
     margin: 0;
     font-weight: 600;
     font-size: 1.48em;
-    letter-spacing: 2.8px;
+    letter-spacing: 1.6px;
     color: #333;
 }
 
 #working,
 #working02,
 #working03 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
     padding-top: 60px;
     display: grid;
     grid-template-columns: 400px 1fr;
@@ -1159,7 +1083,7 @@ a {
 }
 
 .img_01 {
-    background-image: url(../image/hair_cut.jpg);
+    background-image: url(../image/blog_shitigosan.jpg);
     background-size: cover;
 }
 
@@ -1186,7 +1110,7 @@ a {
 
 .title {
     font-size: 16px;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.6px;
 }
 
 @media screen and (max-width:768px) {
@@ -1222,7 +1146,7 @@ a {
 .box_rec p {
     padding: 60px 0 0 60px;
     font-size: 1.6em;
-    letter-spacing: 2.8px;
+    letter-spacing: 1.6px;
     font-weight: 400;
     color: #333;
 }
@@ -1241,7 +1165,7 @@ a {
     margin-top: 60px;
     width: 100%;
     height: 80px;
-    letter-spacing: 2px;
+    letter-spacing: 1.6px;
     border: 1.5px solid #333;
     font-weight: 500;
     font-size: 1.8em;
@@ -1370,7 +1294,7 @@ a {
     .big_btn {
         width: 100%;
         height: 60px;
-        letter-spacing: 2.8px;
+        letter-spacing: 1.6px;
         border: 1.2px solid #333;
         font-weight: 500;
         font-size: 1.6em;
@@ -1489,7 +1413,7 @@ a {
 
 @media screen and (max-width:550px) {
     .menu-content h1 {
-        letter-spacing: 2px;
+        letter-spacing: 1.6px;
         font-size: 26px;
     }
 
@@ -1499,7 +1423,7 @@ a {
 
     .navigation_menu a {
         font-size: 14px;
-        letter-spacing: 1.8px;
+        letter-spacing: 1.6px;
         line-height: 1.6;
     }
 
@@ -1510,7 +1434,6 @@ a {
 
     .heading08 span {
         font-size: 25px;
-        letter-spacing: 4px;
     }
 
     #about_section {
@@ -1522,7 +1445,7 @@ a {
     }
 
     .about_left h3 {
-        letter-spacing: 1.8px;
+        letter-spacing: 1.6px;
     }
 
     .about_left h3 {
@@ -1531,7 +1454,7 @@ a {
 
     .about_left p {
         padding: 16px 0;
-        font-size: 12px;
+        font-size: 14px;
         line-height: 1.6;
         letter-spacing: 1.2px;
     }
@@ -1619,7 +1542,7 @@ a {
     .big_btn {
         margin-top: 40px;
         height: 55px;
-        letter-spacing: 2px;
+        letter-spacing: 1.6px;
         font-size: 1.2em;
     }
 
