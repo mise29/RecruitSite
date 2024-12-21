@@ -4,189 +4,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ray守谷店について</title>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
-    <script src="js/script.js" defer></script>
-    <link rel="stylesheet" href="./css/about.css">
+    <title>HiranoMiyu_portfolio</title>
+    <link rel="stylesheet" href="css/about.css">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5388a13b3e.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </head>
 
 <body>
-    <header class="header">
-        <div class="logo"></div>
-        <a class="form"
-            href="https://docs.google.com/forms/d/e/1FAIpQLSex5npWodg_YMDgw0tSRHl3kR3jKLnFb66A946xwnOBswE83A/viewform?usp=sf_link"><button
-                class="entry">応募する</button></a>
-        <div class="line">
-            <div class="line1"></div>
-            <div class="line1"></div>
-            <div class="line1"></div>
-        </div>
-        <div class="menu">
-            <div class="close-btn">✕</div>
-            <nav class="menu-content">
-                <h1>MENU</h1>
-                <ul class="navigation_menu">
-                    <div class="flexnav">
-                        <li><a href="index.html">トップページ</a></li>
-                        <li><a href="about.html">Ray守谷店のこと</a></li>
-                        <li><a href="index.html#news_seection">お知らせ</a></li>
-                        <li><a href="index.html#features_section">Ray守谷店の特徴</a></li>
-                        <li><a href="about.html#ownertext">社長メッセージ</a></li>
-                        <li><a href="about.html#stafftext">スタッフメッセージ</a></li>
-                        <li><a href="listBlog.html">社員ブログ</a></li>
-                    </div>
-                    <div class="flexnav2">
-                        <li>募集要項</li>
-                        <li><a href="requirement.html">：正社員スタイリスト</a></li>
-                        <li><a href="part.html">・パートスタイリスト</a></li>
-                        <li><a href="#faq_section">よくあるご質問</a></li>
-                        <li><a href="#">お問い合わせ</a></li>
-                    </div>
+
+    <div class="grid">
+        <div class="item sticky">
+            <nav>
+                <ul class="icon">
+                    <a href="index.html" class="menu">
+                        <i class="fa-solid fa-house navIcon"></i>
+                        <span class="english">Top</span>
+                        <span class="japanese">トップ</span>
+                    </a>
+
+                    <a href="works.html" class="menu"><i class="fa-solid fa-pen-nib navIcon"></i>
+                        <span class="english">Work</span>
+                        <span class="japanese">制作物</span>
+                    </a>
+                    <a href="about.html" class="menu"><i class="fa-solid fa-user navIcon"></i>
+                        <span class="english">About</span>
+                        <span class="japanese">私について</span>
+                    </a>
+                    <a href="index.html#contact_page" class="menu"><i class="fa-solid fa-envelope navIcon"></i>
+                        <span class="english">Contact</span>
+                        <span class="japanese">お問い合わせ</span>
+                    </a>
+                    <a href="https://github.com/mise29" target="_blank" class="menu">
+                        <i class="fa-brands fa-github"></i>
+                        <span class="english">GitHub</span>
+                        <span class="japanese">GitHub</span>
+                    </a>
                 </ul>
             </nav>
         </div>
-    </header>
-    <main>
-        <div class="sectuon">
-            <h1 class="big_heading">ABOUT</h1>
-            <p class="small_heading">Ray守谷店のこと</p>
-        </div>
 
-        <div class="about_ray">
-            <div class="about_img"></div>
-            <h2>Ray 美容室グループは、つくばみらい市・守谷市・流山市を中心に美容院を展開する idea
-                が、ライフスタイルに合わせた「ファストビューティーサロン」を新コンセプトに掲げて誕生しました。お客様一人ひとりのニーズに応えながら、続々と新店舗をオープンし、地域に根ざしたサロンとして成長を続けています。<br>Ray守谷店は、これからもお客様にとって気軽で身近な存在であり続けるため、さらなるサービス向上と店舗拡大を目指してまいります。
-            </h2>
-        </div>
+        <section class="about_more">
 
-        <div class="mission">
-            <h2>MISSION</h2>
-            <p>Ray美容室守谷店は、お客様一人ひとりに寄り添ったサービスを提供していきます。</p>
-        </div>
-
-        <div id="ownertext">
-            <div class="mission owner_section">
-                <h2>OWNER MESSAGE</h2>
-                <div class="grid">
-                    <div class="owner_message">
-                        <h4>三上 修平<span>ディレクター</span></h4>
-                        <p>
-                            美容師という仕事は、本当に素晴らしい職業だと私たちは考えています。<br>
-                            しかし現状では、「給与が低い」「労働時間が長い」「休日が少ない」「退勤時間が遅い」といった理由から、必ずしも良いイメージを持たれていないのが実情です。<br>私たちは、こうした業界の課題を改善し、美容師として働くことがもっと魅力的で誇れるものになるよう、業界全体の底上げを目指しています。<br>良い仕事とは、「適正な給与」「充実した休日」「働きやすい職場環境」の三つが揃ってこそ実現できると信じています。<br>
-                            当サロンでは、見学のみのご参加も大歓迎です。ご興味がございましたら、ぜひお気軽にお問い合わせください。
-                        </p>
+            <div class="page_title">
+                <div class="entext">
+                    <div class="entextandicon">
+                        <p>About Me</p><i class="fa-solid fa-user navIcon"></i>
                     </div>
-                    <div class="owner_image"><img src="image/staff01.jpg" height="450" alt="画像"></div>
+                    <!-- <div class="jataxt"><span>私について</span></div> -->
+                </div>
+
+                <div class="profilebox">
+                    <div class="profiletext">
+                        <h3 class="janame">ひらの　みゆ</h3>
+                        <h4>2003年生まれ。茨城県出身。<br>現在、TECH.C.のWebクリエイター専攻で学んでいます。<br>これまでに、ランディングページやバナーのデザイン制作、HTML/CSSを中心としたコーディング、さらに授業で習ったjQueryを用いた動きのある実装にも取り組んできました。
+                        </h4>
+                        <h4>日常生活で目にする「使いやすさ」や「美しさ」に惹かれ、Webデザインの世界に興味を持つようになり、ユーザー体験を重視したデザイン制作を目指しています。どんな課題にも「丁寧さ」と「細部へのこだわり」を大切にしており、見る人にインパクトを与えつつも使いやすいデザインを追求しています。
+                        </h4>
+                        <h4>趣味はアフタヌーンティーや流行りのカフェ、季節ごとのイベントに友人と出かけて楽しむことです。それが発想力や表現力を豊かにする糧になっています。</h4>
+                        <h4>これからも新しい技術や知識を吸収し、流行に敏感に生き、ユーザーにとって価値のあるデザインを提供できるWebデザイナーを目指していきます。</h4>
+                    </div>
+                    <div class="profileimage"></div>
                 </div>
             </div>
-        </div>
 
-
-
-        <div id="stafftext">
-            <div class="message">
-                <h2>STAFF MESSAGE</h2>
-                <div class="member">
-                    <!-- <div class="member_01">
-                    <div class="staff_img"></div>
-                    <div class="name_text">
-                        <h4>三上 修平<span>ディレクター</span></h4>
-                        <p>
-                            素敵なヘアースタイルは、素敵な髪からと考えています。<br>髪のお医者さんになりたくて、毛髪診断士の資格も取得しました。　ケア意識の高いお客様の髪の悩み等、なんでもご相談ください。　今、水素を使用したメニューを考えています。　一緒に技術を高めながら良い美容室を創っていきたい方、ご応募お待ちしております。
-                        </p>
+            <div class="about_grid">
+                <!-- <div class="about_item item_profile">
+                    <div class="profile_text">
+                        <h2>Profile<span>ープロフィールー</span></h2>
+                        <ul class="my_list">
+                            <li>Name：Hirano Miyu</li>
+                            <li>Birthplace：Ibaraki</li>
+                            <li>Birth：2003.12.09</li>
+                            <li>Age：20</li>
+                            <li>School：TECH.C. Web creator major</li>
+                        </ul>
                     </div>
                 </div> -->
-                    <div class="member_01">
-                        <div class="staff_img02"></div>
-                        <div class="name_text">
-                            <h4>平野 雅美<span>トップスタイリスト</span></h4>
-                            <p>
-                                2019年にパート社員として入社し、現在は自由な働き方ができる業務委託でサロンワークを行っています。新規客やフリー客が多いため、自分の得意を活かす機会が豊富にあります。また、ライフスタイルやビジョンに応じた働き方ができるため、続けられています。オーナーやスタッフとの意見交換が活発で、より良い環境づくりを目指す職場です。ぜひご応募をお待ちしております。
-                            </p>
-                        </div>
+                <div class="about_item item_skills">
+                    <h2>Skills<span>ーできることー</span></h2>
+                    <div class="bar">
+                        <dl class="bar-chart-002">
+                            <div>
+                                <dt>HTML</dt>
+                                <dd><span style="width: 90%">90%</span></dd>
+                            </div>
+                            <div>
+                                <dt>CSS</dt>
+                                <dd><span style="width: 90%">90%</span></dd>
+                            </div>
+                            <div>
+                                <dt>JavaScript</dt>
+                                <dd><span style="width: 40%">40%</span></dd>
+                            </div>
+                            <div>
+                                <dt>Illustrator</dt>
+                                <dd><span style="width: 60%">60%</span></dd>
+                            </div>
+                            <div>
+                                <dt>Photoshop</dt>
+                                <dd><span style="width: 60%">60%</span></dd>
+                            </div>
+                            <div>
+                        </dl>
+                        <dl class="bar-chart-002">
+                            <div>
+                                <dt>Figma</dt>
+                                <dd><span style="width: 80%">80%</span></dd>
+                            </div>
+                            <div>
+                                <dt>XD</dt>
+                                <dd><span style="width: 70%">70%</span></dd>
+                            </div>
+                            <div>
+                                <dt>After Effects</dt>
+                                <dd><span style="width: 60%">60%</span></dd>
+                            </div>
+                            <div>
+                                <dt>Premiere Pro</dt>
+                                <dd><span style="width: 60%">60%</span></dd>
+                            </div>
+                            <div>
+                                <dt>Git</dt>
+                                <dd><span style="width: 40%">40%</span></dd>
+                            </div>
+                            <div>
+                        </dl>
                     </div>
-                    <div class="member_01">
-                        <div class="staff_img03"></div>
-                        <div class="name_text">
-                            <h4>横田 理緒<span>スタイリスト 7年</span></h4>
-                            <p>
-                                2022年に中途入社し、正社員として働いています。当社ではライフスタイルに合わせた多様な働き方を提供しており、完全週休2日や充実した福利厚生が整っているのでプライベートも充実し、とても楽しく働かせていただいています！幅広い年代のお客様にご来店いただき、一人ひとりに丁寧に向き合える環境がとても嬉しいです。不安なこともあるかもしれませんが、ぜひ一緒に楽しく働きましょう！
-                            </p>
-                        </div>
+                </div>
+
+                <div class="about_item item_history">
+                    <h2>My History<span>ー私の歴史ー</span></h2>
+                    <div class="timeline">
+                        <ul class="timeline-list">
+                            <li class="timeline-list-item">
+                                <div class="date">2003年12月</div>
+                                <div class="content">茨城県に生まれる<br><span>小さいころから人と話すことや可愛いものを見て真似すること、創ることが好きでした。</span>
+                                </div>
+                            </li>
+                            <li class="timeline-list-item">
+                                <div class="date">2022年3月</div>
+                                <div class="content">
+                                    茨城の県立高校（普通科）を卒業<br><span>自分の行きたい高校を選択し、普通科高校理系で卒業。コミュニケーションが沢山とれる環境で楽しく、辛いこともありましたが、とても実りある３年間を過ごしました。</span>
+                                </div>
+                            </li>
+                            <li class="timeline-list-item">
+                                <div class="date">2022年3月</div>
+                                <div class="content">
+                                    Webに興味を持ち、ITの専門学校に入学<br><span>何もかも未知でしたが、入学前のコーディング体験授業で自分で作り上げたものが即座に視覚化されることへの大きな達成感と楽しさを覚え、入学を決意しました。
+                                        </p>
+                                    </span></div>
+                            </li>
+                            <li class="timeline-list-item">
+                                <div class="date">2022年12月</div>
+                                <div class="content">
+                                    コーディングやデザインが好きになる<br><span>校内発表で自分の作品プレゼンをした際、他の人の様々なLPデザインを見て、視野が広がり、より綺麗で見やすいデザインを突き詰めたくなりました。また、デザインの自由さというクリエイティビティを発揮する楽しさを覚えました。</span>
+                                </div>
+                            </li>
+                            <li class="timeline-list-item">
+                                <div class="date">2023年10月</div>
+                                <div class="content">
+                                    HCDに興味を持つ<br><span>UI/UXの授業を通して、日常生活において「使いやすい」「使いにくい」という観点に敏感になり、視覚的に分かりやすいデザインへの興味が深まりました。特に、気になるアプリをインストールして、そのUIデザインやユーザビリティを観察するようになりました。</span>
+                                </div>
+                            </li>
+                            <li class="timeline-list-item">
+                                <div class="date">2024年10月</div>
+                                <div class="content">
+                                    HCD基礎検定の取得に向けて勉強<br><span>ユーザー視点で課題を発見し、解決策を考えるプロセスに関心を持ち、HCDの基礎知識を体系的に学ぶための勉強を始めました。2月に行われる試験に合格することを目標に勉強しています。</span>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="member_01">
-                        <div class="staff_img04"></div>
-                        <div class="name_text">
-                            <h4>仲山 加奈<span>スタイリスト 8年</span></h4>
-                            <p>
-                                2023年に中途入社し、自分のやりたい技術に取り組める環境で働いています。幅広い年齢層のお客様が来店されるため、多様な技術に挑戦できる点も魅力です。完全週休2日制で土日もお休みを頂けるのでプライベートも充実します。自分のライフスタイルに合った働き方ができ、とても助かっています。ぜひ一緒に働きましょう！
-                            </p>
-                        </div>
-                    </div>
-                    <div class="member_01">
-                        <div class="staff_img04"></div>
-                        <div class="name_text">
-                            <h4>山賀<span>アシスタント</span></h4>
-                            <p>
-                                2022年に扶養内パートとして入社し、現在はアシスタントとして働いています。20年以上のブランクがありましたが、出来ることから無理せず自分のペースで少しずつ感覚を取り戻しています。勤務日数や勤務時間についても相談できる環境がとても助かっています。興味のある方お待ちしております！
-                            </p>
-                        </div>
-                    </div>
+
                 </div>
             </div>
 
-        </div>
-    </main>
+        </section>
 
-    <footer>
-        <div class="footer-container">
-            <div class="footer-section company-info">
-                <h4>店舗情報</h4>
-                <ul>
-                    <li><a href="about.html">Ray守谷店のこと</a></li>
-                    <li><a href="index.html#news_section">お知らせ</a></li>
-                    <li><a href="index.html#features_section">Ray守谷店の特徴</a></li>
-                    <li><a href="about.html#ownertext">社長メッセージ</a></li>
-                    <li><a href="about.html#stafftext">スタッフメッセージ</a></li>
-                    <li><a href="listBlog.html">社員ブログ</a></li>
-                </ul>
-            </div>
+    </div>
 
-            <div class="footer-section recruit-info">
-                <h4>採用情報</h4>
-                <ul>
-                    <li>募集要項</li>
-                    <li><a href="requirement.html">・正社員スタイリスト</a></li>
-                    <li><a href="part.html">・パートスタイリスト</a></li>
-                    <li><a href="index.html#faq_section">よくある質問</a></li>
-                </ul>
-            </div>
+    </section>
 
-            <div class="footer-section contact-info">
-                <h4>その他</h4>
-                <ul>
-                    <li><a href="/contact">お問い合わせ</a></li>
-                    <li><a href="/location">アクセス</a></li>
-                    <li><a href="/privacy">プライバシーポリシー</a></li>
-                </ul>
-            </div>
-
-            <!-- SNS -->
-            <!-- <div class="footer-section social-media">
-                <h4>Follow Us</h4>
-                <ul class="social-links">
-                    <li><a href="https://twitter.com/yourcompany" target="_blank">Twitter</a></li>
-                    <li><a href="https://facebook.com/yourcompany" target="_blank">Facebook</a></li>
-                    <li><a href="https://instagram.com/yourcompany" target="_blank">Instagram</a></li>
-                    <li><a href="https://linkedin.com/yourcompany" target="_blank">LinkedIn</a></li>
-                </ul>
-            </div> -->
-        </div>
-
-        <div class="footer-bottom">
-            <p>&copy; 2024 Your Company. All Rights Reserved.</p>
-        </div>
-    </footer>
+    </div>
 </body>
 
 </html>
